@@ -12,6 +12,7 @@ app.use(express.json());
 
 // ==== Routing ====
 app.use("/api", appRouter);
+app.use("/cover", express.static("public/cover"));
 
 // ==== Serveur ====
 app.listen(PORT, (error) => {
